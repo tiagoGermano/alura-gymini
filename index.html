@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Alura|Google - alura-gymini </title>
+    <link rel="stylesheet" href="\style.css" >
+    <link rel="shortcut icon" href="images/favicon.png" >
+</head>
+<body>
+    <header>
+        <img src="images/alura-gymini-logo.png" alt="alura-gymini-logo">
+    </header>
+
+    <main>
+        <section class="filtro">
+            <label for="filtro-exercicio">Nome</label>
+            <input id="filtro-exercicio" type="text">
+    
+            <label for="filtro-grupo-muscular">Grupo Muscular</label>
+            <select id="filtro-grupo-muscular">
+                <option></option>
+                <option value="pernas">Pernas</option>
+                <option value="biceps">Bíceps</option>
+                <option value="triceps">Tríceps</option>
+            </select>
+    
+            <button onclick="buscar()" >buscar</button>
+        </section>
+    
+        <section class="card-list">
+            <section class="exercise-card">
+                <span class="title">Supino Reto</span>
+                <div class="card-main">
+                    <div class="card-content">
+                        <span class="subtitle">Objetivo:</span>
+                        <p>Trabalham principalmente o músculo peitoral maior, com ênfases diferentes em cada variação.</p>
+                        <div class="intrucao">
+                            <span class="subtitle">Instrucao:</span>
+                            <ol>
+                                <li>Deite-se em um banco plano com os pés firmes no chão e a barra posicionada acima do peito</li>
+                                <li>Abaixe a barra até tocar o peito e empurre de volta à posição inicial.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <img src="images/exercises/barbell-bench-press.gif" alt="supino-reto-instrucao">
+                </div>
+            </section>
+
+            <section class="exercise-card">
+                <span class="title">Push up</span>
+                <div class="card-main">
+                    <div class="card-content">
+                        <span class="subtitle">Objetivo:</span>
+                        <p>Trabalham principalmente o músculo peitoral maior, com ênfases diferentes em cada variação.</p>
+                        <div class="intrucao">
+                            <span class="subtitle">Instrucao:</span>
+                            <ol>
+                                <li>Deite-se em um banco plano com os pés firmes no chão e a barra posicionada acima do peito</li>
+                                <li>Abaixe a barra até tocar o peito e empurre de volta à posição inicial.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <img src="images/exercises/pushup.gif" alt="supino-reto-instrucao">
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 - Alura Gymini. Todos os direitos reservados</p>
+    </footer>
+    
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
